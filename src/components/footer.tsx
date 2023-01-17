@@ -1,4 +1,8 @@
 import React from "react";
+import ArrowIcon from "./svg/arrow_ico";
+import OutlickIcon from "./svg/outlink_ico";
+import PlusIcon from "./svg/plus_ico";
+import data from "./../data.json";
 
 function Footer() {
   return (
@@ -130,11 +134,13 @@ function Footer() {
                 <li role={"listitem"}>
                   <a href="#">
                     <span role={"text"}>카카오 고객센터</span>
+                    <OutlickIcon className={"ico_outlink"} />
                   </a>
                 </li>
                 <li role={"listitem"}>
                   <a href="#">
                     <span role={"text"}>Daum 고객센터</span>
+                    <OutlickIcon className={"ico_outlink"} />
                   </a>
                 </li>
               </ul>
@@ -142,11 +148,13 @@ function Footer() {
             <strong className="tit_service">
               <a href="#">
                 <span role={"text"}>인재영입</span>
+                <OutlickIcon className={"ico_outlink"} />
               </a>
             </strong>
             <strong className="tit_service">
               <a href="#">
                 <span role={"text"}>카카오계정</span>
+                <OutlickIcon className={"ico_outlink"} />
               </a>
             </strong>
           </div>
@@ -157,16 +165,19 @@ function Footer() {
             <div className="wrap_info">
               <a href="#" className="link_info">
                 이용약관
+                <ArrowIcon className={"ico_arrow"} />
               </a>
             </div>
             <div className="wrap_info">
               <a href="#" className="link_info link_emph">
                 위치기반서비스이용약관
+                <ArrowIcon className={"ico_arrow"} />
               </a>
             </div>
             <div className="wrap_info">
               <a href="#" className="link_info link_emph">
                 개인정보처리방침
+                <ArrowIcon className={"ico_arrow"} />
               </a>
             </div>
             <div className="wrap_info">
@@ -177,6 +188,7 @@ function Footer() {
             <div className="wrap_info">
               <a href="#" className="link_info">
                 청소년보호정책
+                <ArrowIcon className={"ico_arrow"} />
               </a>
             </div>
             <div className="wrap_info">
@@ -192,6 +204,7 @@ function Footer() {
             <div className="wrap_info">
               <a href="#" className="link_info">
                 공지사항
+                <ArrowIcon className={"ico_arrow"} />
               </a>
             </div>
             <div className="wrap_info">
@@ -209,11 +222,7 @@ function Footer() {
             <strong className="tit_relation">
               <a href="#">
                 관련사이트
-                <img
-                  src="/images/svg/svg-8.svg"
-                  alt="플러스 아이콘"
-                  className="ico_plus"
-                />
+                <PlusIcon className={"ico_plus"} />
               </a>
             </strong>
           </div>
