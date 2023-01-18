@@ -216,6 +216,36 @@ code {
 .list_gnb > li > a:hover {
   color: var(--baseForeground);
 }
+.head_type1 .doc-gnb .list_gnb > li:first-child .list_sub {
+  width: 267px;
+}
+.head_type1 .doc-gnb .list_sub {
+  display: none;
+  position: absolute;
+  top: 60px;
+  left: 4px;
+  padding: 0 24.5px;
+  background: var(--baseForeground);
+  border-radius: 24px;
+  white-space: nowrap;
+  box-sizing: border-box;
+  z-index: 100;
+}
+.head_type1 .doc-gnb .list_sub li {
+  display: inline-block;
+}
+.head_type1 .doc-gnb .list_sub li + li {
+  margin-left: 24px;
+}
+.head_type1 .doc-gnb .list_sub li a {
+  display: block;
+  padding: 11px 0 13px;
+  line-height: 24px;
+  color: var(--colorBg1);
+}
+.on {
+  display: block;
+}
 
 /* section */
 .inner-main {
