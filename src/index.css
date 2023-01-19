@@ -243,7 +243,7 @@ code {
   line-height: 24px;
   color: var(--colorBg1);
 }
-.on {
+.head_type1 .doc-gnb .list_gnb > li.on .list_sub {
   display: block;
 }
 
@@ -917,6 +917,7 @@ code {
   font-size: 12px;
   letter-spacing: -0.2px;
   color: #888;
+  cursor: pointer;
 }
 .section_relation .wrap_info .link_info.link_emph {
   font-weight: 700;
@@ -931,6 +932,17 @@ code {
   margin: 6px 0 0 4px;
 }
 .doc-footer .wrap_info .link_info:hover .ico_arrow {
+  -webkit-transform: rotate(-180deg);
+  transform: rotate(-180deg);
+  stroke: #000;
+}
+.section_relation .info_open .link_info {
+  color: var(--colorFg2);
+}
+.text_clicked {
+  color: var(--colorFg2);
+}
+.ico_clicked {
   -webkit-transform: rotate(-180deg);
   transform: rotate(-180deg);
   stroke: #000;
@@ -951,6 +963,7 @@ code {
   color: var(--colorFg4);
   line-height: 18px;
   letter-spacing: -0.2px;
+  cursor: pointer;
 }
 .section_relation .wrap_relation .tit_relation a .ico_plus {
   float: right;
@@ -958,8 +971,52 @@ code {
   height: 14px;
   margin-top: 3px;
 }
+.section_relation .list_subinfo {
+  display: none;
+  position: absolute;
+  bottom: 30px;
+  left: 0;
+  padding: 16px 0;
+  background: var(--colorBg2);
+  border-radius: 12px;
+}
+.section_relation .wrap_relation .list_subinfo {
+  width: 100%;
+  bottom: 52px;
+}
+.section_relation .list_subinfo li + li {
+  margin-top: 12px;
+}
+.section_relation .info_open .list_subinfo {
+  display: block;
+}
+.section_relation .list_subinfo a[data-v-15aff456] {
+  display: block;
+  padding: 0 20px;
+  font-size: 12px;
+  color: var(--colorFg5);
+  white-space: nowrap;
+}
+.section_relation .list_subinfo a[data-v-15aff456] {
+  display: block;
+  padding: 0 20px;
+  font-size: 12px;
+  color: var(--colorFg5);
+  white-space: nowrap;
+}
+.doc-footer .list_subinfo a:hover {
+  color: var(--colorFg2);
+}
+.section_relation .list_subinfo a .ico_outlink {
+  margin: 5px 0 0 4px;
+}
+
 .doc-footer .ico_plus {
   fill: var(--colorFg11);
+}
+.section_relation .wrap_relation.info_open .ico_plus {
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
 }
 .section_service .ico_outlink {
   margin: 6px 0 0 4px;

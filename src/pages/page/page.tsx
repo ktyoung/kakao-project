@@ -49,23 +49,6 @@ function Page() {
     });
   }, [scrollY, lastScrollY]);
 
-  // let link_top = document.querySelector(".link_top");
-  // useEffect(() => {
-  //   if (link_top instanceof HTMLElement) {
-  //     link_top.addEventListener("click", function (e) {
-  //       console.log("클릭함");
-  //       setScrollY(0);
-  //       setLastScrollY(0);
-  //       setTimeout(function () {
-  //         e.preventDefault();
-  //         window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
-  //       }, 500);
-  //     });
-  //   } else {
-  //     link_top as HTMLElement;
-  //   }
-  // }, []);
-
   return (
     <>
       <Header />
