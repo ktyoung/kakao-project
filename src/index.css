@@ -1,3 +1,4 @@
+/* 초기화 코드 */
 @font-face {
   font-family: KakaoSmall;
   font-weight: 300;
@@ -121,6 +122,12 @@ svg {
   vertical-align: top;
 }
 
+video {
+  object-fit: contain;
+  overflow-clip-margin: content-box;
+  overflow: clip;
+}
+
 a {
   color: #333;
 }
@@ -144,6 +151,8 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+
+/* 메인 페이지 */
 /* header */
 .doc-header {
   position: fixed;
@@ -1160,4 +1169,180 @@ code {
 }
 .tit_main.tit_date31 {
   background-image: url("../public/images/date/date-gif/ico_date31.gif");
+}
+
+/* 카카오 문화 */
+.tit_main.tit_culture {
+  background-image: url("../public/images/ico_tit_culture.gif");
+}
+.tit_main:not(.tit_home) .txt_tit {
+  display: block;
+  margin-top: 22px;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 36px;
+}
+.cont_culture .section_culture {
+  margin-top: 96px;
+  text-align: center;
+}
+
+.cont_culture .section_culture .header_tit {
+  overflow: hidden;
+  position: relative;
+  height: 729px;
+  border-radius: 12px;
+  -webkit-mask-image: -webkit-radial-gradient(#fff, #000);
+}
+.cont_culture .section_culture .header_tit:after {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 12px;
+  background-color: rgba(0, 0, 0, 0.25);
+  content: "";
+}
+.cont_culture .section_culture .header_tit .vod_culture {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  height: 100%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+.cont_culture .section_culture .header_tit .tit_culture {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  z-index: 10;
+  font-family: KakaoBig, Apple SD Gothic Neo, Malgun Gothic, 맑은 고딕,
+    sans-serif;
+  font-size: 42px;
+  line-height: 62px;
+  letter-spacing: -1px;
+  color: #fff;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+.cont_culture .section_culture .header_tit .txt_tit {
+  display: block;
+  font-size: 22px;
+  line-height: 32px;
+  margin-bottom: 12px;
+}
+
+.cont_culture .section_culture .tit_section {
+  display: block;
+  margin-top: 240px;
+  font-family: KakaoBig, Apple SD Gothic Neo, Malgun Gothic, 맑은 고딕,
+    sans-serif;
+  font-size: 42px;
+  line-height: 62px;
+  letter-spacing: -1px;
+  color: var(--baseForeground);
+}
+
+.cont_culture .section_culture .desc_section {
+  margin-top: 36px;
+  padding: 0 260px;
+  font-family: KakaoBig, Apple SD Gothic Neo, Malgun Gothic, 맑은 고딕,
+    sans-serif;
+  font-size: 18px;
+  line-height: 32px;
+  word-break: keep-all;
+  color: var(--colorFg1);
+}
+
+.cont_culture .section_culture .desc_section + .info_section {
+  margin-top: 240px;
+}
+.cont_culture .section_culture .info_section {
+  overflow: hidden;
+  width: 1056px;
+  height: 619px;
+  margin: 72px auto 0;
+  border-radius: 12px;
+  box-shadow: 2px 5px 40px 0 rgb(0 0 0 / 9%);
+  text-align: left;
+}
+.cont_culture .section_culture .info_section:nth-of-type(2n) .inner_section {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+  -ms-flex-direction: row-reverse;
+  flex-direction: row-reverse;
+}
+.cont_culture .section_culture .info_section .inner_section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+}
+.cont_culture .section_culture .info_section .wrap_img {
+  display: block;
+  -webkit-box-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  max-width: 528px;
+}
+.cont_culture .section_culture .info_section .wrap_cont {
+  overflow: hidden;
+  position: relative;
+  max-width: 528px;
+  padding: 72px;
+  -webkit-box-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  box-sizing: border-box;
+  background-color: var(--colorBg10);
+}
+.cont_culture .section_culture .info_section .tit_info {
+  display: block;
+  font-family: KakaoBig, Apple SD Gothic Neo, Malgun Gothic, 맑은 고딕,
+    sans-serif;
+  font-size: 36px;
+  line-height: 52px;
+  color: var(--baseForeground);
+  word-break: keep-all;
+  white-space: pre-line;
+}
+.cont_culture .section_culture .info_section .txt_info {
+  display: block;
+  margin-top: 11px;
+  font-size: 18px;
+  line-height: 28px;
+  color: #919191;
+}
+.cont_culture .section_culture .info_section .info_cont {
+  position: absolute;
+  bottom: 72px;
+  left: 72px;
+  right: 72px;
+}
+.cont_culture .section_culture .info_section .desc_info {
+  font-size: 16px;
+  line-height: 28px;
+  color: var(--baseForeground);
+  word-break: keep-all;
+  white-space: pre-line;
+}
+.cont_culture .section_culture .info_section .wrap_tag {
+  display: block;
+  margin-top: 24px;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 24px;
+  color: #919191;
+}
+.cont_culture .section_culture .info_section .wrap_tag .txt_tag {
+  display: inline-block;
+  margin-right: 4px;
+}
+.cont_culture .section_culture .info_section .vod_section {
+  display: block;
+  width: 100%;
+  height: 100%;
 }

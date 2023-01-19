@@ -1,4 +1,6 @@
 import React, { useEffect, useState } from "react";
+import { Link, Route } from "react-router-dom";
+import Culture from "../pages/page/kakao/kakaoCulture";
 
 function Header() {
   function link_menu0() {
@@ -36,7 +38,7 @@ function Header() {
               </a>
               <ul className="list_sub">
                 <li>
-                  <a href="#">카카오 문화</a>
+                  <Link to="/kakaoCulture">카카오 문화</Link>
                 </li>
                 <li>
                   <a href="#">공동체</a>

@@ -2,8 +2,6 @@ import React, { useEffect } from "react";
 import ArrowIcon from "./svg/arrow_ico";
 import OutlickIcon from "./svg/outlink_ico";
 import PlusIcon from "./svg/plus_ico";
-import data from "./../data.json";
-import ArrIcon from "./svg/arr_ico";
 
 function Footer() {
   function wrap_info0() {

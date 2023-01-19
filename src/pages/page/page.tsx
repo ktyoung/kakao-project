@@ -4,57 +4,11 @@ import Header from "../../components/header";
 import HalfItemCard from "../../components/main/halfItemCard";
 import ItemCard from "../../components/main/itemCard";
 import ArrIcon from "../../components/svg/arr_ico";
-import data from "./../../data.json";
+import data from "../../data/data.json";
+import CommonHooks from "../../hooks/common-hooks";
 
 function Page() {
-  let nav = document.querySelectorAll<HTMLElement>(".doc-header")[0];
-  let nav_small = document.querySelectorAll<HTMLElement>(".content-feature")[0];
-  let [scrollY, setScrollY] = useState(0);
-  let [lastScrollY, setLastScrollY] = useState(0);
-  let [wheelDirection, setWheelDirection] = useState("");
-
-  function remove_class_on() {
-    document.querySelectorAll(".list_gnb > li")[0].classList.remove("on");
-    document.querySelectorAll(".list_gnb > li")[1].classList.remove("on");
-    document.querySelectorAll(".list_gnb > li")[2].classList.remove("on");
-  }
-  useEffect(() => {
-    window.onbeforeunload = function pushRefresh() {
-      window.scrollTo(0, 0);
-    };
-  }, []);
-
-  useEffect(() => {
-    window.addEventListener("scroll", function () {
-      setScrollY(window.scrollY);
-      if (nav instanceof HTMLElement) {
-        setLastScrollY(scrollY);
-        if (scrollY > lastScrollY) {
-          setWheelDirection("down");
-        } else {
-          setWheelDirection("up");
-        }
-        if (scrollY > 150 && wheelDirection == "up") {
-          nav.classList.remove("hide_header");
-          remove_class_on();
-        } else if (scrollY > 150) {
-          nav_small.style.visibility = "visible";
-          nav.classList.add("hide_header");
-          remove_class_on();
-        } else {
-          nav_small.style.visibility = "hidden";
-        }
-
-        if (scrollY > 20) {
-          nav.style.borderBottom = "1px solid var(--colorBg1)";
-        } else if (scrollY < 20) {
-          nav.style.borderBottom = "none";
-        }
-      } else {
-        nav as HTMLElement;
-      }
-    });
-  }, [scrollY, lastScrollY]);
+  CommonHooks();
 
   let date = new Date();
   let weeks = new Array(
@@ -90,7 +44,7 @@ function Page() {
               <div className="wrap_tit">
                 <img
                   src={"/images/date/date-png/" + day + ".png"}
-                  alt="오늘 날짜 이미지"
+                  alt="아이콘 이미지"
                 />
                 <strong className="tit_path">오늘의 카카오</strong>
               </div>
@@ -393,8 +347,6 @@ function Page() {
                   className="link_top"
                   onClick={() => {
                     window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
-                    setScrollY(0);
-                    setLastScrollY(0);
                   }}
                 >
                   <ArrIcon className={"ico_top"} />
