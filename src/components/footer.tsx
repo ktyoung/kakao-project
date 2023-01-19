@@ -6,24 +6,45 @@ import data from "./../data.json";
 import ArrIcon from "./svg/arr_ico";
 
 function Footer() {
-  useEffect(() => {
-    document
-      .querySelectorAll(".tit_relation")[0]
-      .addEventListener("click", function () {
-        document
-          .querySelectorAll(".wrap_relation")[0]
-          .classList.toggle("info_open");
-      });
+  function wrap_info0() {
+    document.querySelectorAll(".wrap_info")[1].classList.remove("info_open");
+    document.querySelectorAll(".wrap_info")[2].classList.remove("info_open");
+    document.querySelectorAll(".wrap_info")[4].classList.remove("info_open");
+    document.querySelectorAll(".wrap_info")[7].classList.remove("info_open");
+    document.querySelectorAll(".wrap_info")[0].classList.toggle("info_open");
+  }
 
-    let wrap_info = document.querySelectorAll(".wrap_info");
-    let wrap_info_size = wrap_info.length;
+  function wrap_info1() {
+    document.querySelectorAll(".wrap_info")[0].classList.remove("info_open");
+    document.querySelectorAll(".wrap_info")[2].classList.remove("info_open");
+    document.querySelectorAll(".wrap_info")[4].classList.remove("info_open");
+    document.querySelectorAll(".wrap_info")[7].classList.remove("info_open");
+    document.querySelectorAll(".wrap_info")[1].classList.toggle("info_open");
+  }
 
-    for (let i = 0; i < wrap_info_size; i++) {
-      wrap_info[i].addEventListener("click", function () {
-        wrap_info[i].classList.toggle("info_open");
-      });
-    }
-  });
+  function wrap_info2() {
+    document.querySelectorAll(".wrap_info")[0].classList.remove("info_open");
+    document.querySelectorAll(".wrap_info")[1].classList.remove("info_open");
+    document.querySelectorAll(".wrap_info")[4].classList.remove("info_open");
+    document.querySelectorAll(".wrap_info")[7].classList.remove("info_open");
+    document.querySelectorAll(".wrap_info")[2].classList.toggle("info_open");
+  }
+
+  function wrap_info4() {
+    document.querySelectorAll(".wrap_info")[0].classList.remove("info_open");
+    document.querySelectorAll(".wrap_info")[1].classList.remove("info_open");
+    document.querySelectorAll(".wrap_info")[2].classList.remove("info_open");
+    document.querySelectorAll(".wrap_info")[7].classList.remove("info_open");
+    document.querySelectorAll(".wrap_info")[4].classList.toggle("info_open");
+  }
+
+  function wrap_info7() {
+    document.querySelectorAll(".wrap_info")[0].classList.remove("info_open");
+    document.querySelectorAll(".wrap_info")[1].classList.remove("info_open");
+    document.querySelectorAll(".wrap_info")[2].classList.remove("info_open");
+    document.querySelectorAll(".wrap_info")[4].classList.remove("info_open");
+    document.querySelectorAll(".wrap_info")[7].classList.toggle("info_open");
+  }
 
   return (
     <footer className="doc-footer">
@@ -206,11 +227,7 @@ function Footer() {
           <h2 className="screen_out">서비스 이용정보</h2>
           <div className="group_info">
             <div className="wrap_info">
-              <a
-                onClick={(e) => e.preventDefault}
-                role={"button"}
-                className="link_info"
-              >
+              <a onClick={wrap_info0} role={"button"} className="link_info">
                 이용약관
                 <ArrowIcon className={"ico_arrow"} />
               </a>
@@ -258,7 +275,7 @@ function Footer() {
             </div>
             <div className="wrap_info">
               <a
-                onClick={(e) => e.preventDefault}
+                onClick={wrap_info1}
                 role={"button"}
                 className="link_info link_emph"
               >
@@ -296,7 +313,7 @@ function Footer() {
             </div>
             <div className="wrap_info">
               <a
-                onClick={(e) => e.preventDefault}
+                onClick={wrap_info2}
                 role={"button"}
                 className="link_info link_emph"
               >
@@ -343,11 +360,7 @@ function Footer() {
               </a>
             </div>
             <div className="wrap_info">
-              <a
-                onClick={(e) => e.preventDefault}
-                role={"button"}
-                className="link_info"
-              >
+              <a onClick={wrap_info4} role={"button"} className="link_info">
                 청소년보호정책
                 <ArrowIcon className={"ico_arrow"} />
               </a>
@@ -403,11 +416,7 @@ function Footer() {
               </a>
             </div>
             <div className="wrap_info">
-              <a
-                onClick={(e) => e.preventDefault}
-                role={"button"}
-                className="link_info"
-              >
+              <a onClick={wrap_info7} role={"button"} className="link_info">
                 공지사항
                 <ArrowIcon className={"ico_arrow"} />
               </a>
@@ -476,7 +485,14 @@ function Footer() {
             </div>
           </div>
           <div className="wrap_relation">
-            <strong className="tit_relation">
+            <strong
+              className="tit_relation"
+              onClick={() => {
+                document
+                  .querySelectorAll(".wrap_relation")[0]
+                  .classList.toggle("info_open");
+              }}
+            >
               <a onClick={(e) => e.preventDefault} role={"button"}>
                 관련사이트
                 <PlusIcon className={"ico_plus"} />

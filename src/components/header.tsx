@@ -1,6 +1,24 @@
 import React, { useEffect, useState } from "react";
 
 function Header() {
+  function link_menu0() {
+    document.querySelectorAll(".list_gnb > li")[2].classList.remove("on");
+    document.querySelectorAll(".list_gnb > li")[3].classList.remove("on");
+    document.querySelectorAll(".list_gnb > li")[0].classList.toggle("on");
+  }
+
+  function link_menu2() {
+    document.querySelectorAll(".list_gnb > li")[0].classList.remove("on");
+    document.querySelectorAll(".list_gnb > li")[3].classList.remove("on");
+    document.querySelectorAll(".list_gnb > li")[2].classList.toggle("on");
+  }
+
+  function link_menu3() {
+    document.querySelectorAll(".list_gnb > li")[0].classList.remove("on");
+    document.querySelectorAll(".list_gnb > li")[2].classList.remove("on");
+    document.querySelectorAll(".list_gnb > li")[3].classList.toggle("on");
+  }
+
   return (
     <header className="doc-header head_type1" style={{ borderBottom: "none" }}>
       <div className="wrap_header">
@@ -13,7 +31,9 @@ function Header() {
           <h2 className="screen_out">메인메뉴</h2>
           <ul className="list_gnb">
             <li>
-              <a href="#">카카오</a>
+              <a className="link_menu" onClick={link_menu0}>
+                카카오
+              </a>
               <ul className="list_sub">
                 <li>
                   <a href="#">카카오 문화</a>
@@ -27,10 +47,14 @@ function Header() {
               </ul>
             </li>
             <li>
-              <a href="#">뉴스</a>
+              <a href="#" className="link_menu">
+                뉴스
+              </a>
             </li>
             <li>
-              <a href="#">기술과 서비스</a>
+              <a className="link_menu" onClick={link_menu2}>
+                기술과 서비스
+              </a>
               <ul className="list_sub">
                 <li>
                   <a href="#">기술</a>
@@ -41,7 +65,9 @@ function Header() {
               </ul>
             </li>
             <li>
-              <a href="#">약속과 책임</a>
+              <a className="link_menu" onClick={link_menu3}>
+                약속과 책임
+              </a>
               <ul className="list_sub">
                 <li>
                   <a href="#">ESG</a>

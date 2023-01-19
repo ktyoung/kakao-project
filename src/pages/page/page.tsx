@@ -13,6 +13,11 @@ function Page() {
   let [lastScrollY, setLastScrollY] = useState(0);
   let [wheelDirection, setWheelDirection] = useState("");
 
+  function remove_class_on() {
+    document.querySelectorAll(".list_gnb > li")[0].classList.remove("on");
+    document.querySelectorAll(".list_gnb > li")[1].classList.remove("on");
+    document.querySelectorAll(".list_gnb > li")[2].classList.remove("on");
+  }
   useEffect(() => {
     window.onbeforeunload = function pushRefresh() {
       window.scrollTo(0, 0);
@@ -31,9 +36,11 @@ function Page() {
         }
         if (scrollY > 150 && wheelDirection == "up") {
           nav.classList.remove("hide_header");
+          remove_class_on();
         } else if (scrollY > 150) {
           nav_small.style.visibility = "visible";
           nav.classList.add("hide_header");
+          remove_class_on();
         } else {
           nav_small.style.visibility = "hidden";
         }
@@ -49,6 +56,28 @@ function Page() {
     });
   }, [scrollY, lastScrollY]);
 
+  let date = new Date();
+  let weeks = new Array(
+    "일요일",
+    "월요일",
+    "화요일",
+    "수요일",
+    "목요일",
+    "금요일",
+    "토요일"
+  );
+  let month = date.getMonth() + 1;
+  let day = date.getDate();
+  let today = date.getDay();
+  let weekday = weeks[today];
+
+  useEffect(() => {
+    document
+      .querySelectorAll(".tit_main")[0]
+      .classList.remove("tit_date" + (day - 1));
+    document.querySelectorAll(".tit_main")[0].classList.add("tit_date" + day);
+  });
+
   return (
     <>
       <Header />
@@ -59,16 +88,21 @@ function Page() {
             <div className="inner_path">
               <h3 className="screen_out">현재 페이지 위치</h3>
               <div className="wrap_tit">
-                <img src="/images/date/date-png/1.png" alt="오늘 날짜 이미지" />
+                <img
+                  src={"/images/date/date-png/" + day + ".png"}
+                  alt="오늘 날짜 이미지"
+                />
                 <strong className="tit_path">오늘의 카카오</strong>
               </div>
             </div>
           </section>
           <div className="main-content">
             <article className="content-article">
-              <h3 role={"text"} className="tit_main tit_home tit_date1">
+              <h3 role={"text"} className="tit_main tit_home ">
                 <em className="emph_tit">오늘의 카카오</em>
-                <span className="txt_tit">1월 1일 월요일 소식입니다</span>
+                <span className="txt_tit">
+                  {month}월 {day}일 {weekday} 소식입니다
+                </span>
               </h3>
               <div className="cont_home">
                 <div className="section_home">
