@@ -25,9 +25,9 @@ function Header() {
     <header className="doc-header head_type1" style={{ borderBottom: "none" }}>
       <div className="wrap_header">
         <h1 className="doc-title">
-          <a href="#">
+          <Link to="/">
             <img src="/images/logo.png" alt="로고" className="ico_logo" />
-          </a>
+          </Link>
         </h1>
         <nav id="gnbContent" className="doc-gnb">
           <h2 className="screen_out">메인메뉴</h2>
