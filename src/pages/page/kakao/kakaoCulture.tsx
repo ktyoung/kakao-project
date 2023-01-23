@@ -4,7 +4,7 @@ import Header from "../../../components/header";
 import ArrIcon from "../../../components/svg/arr_ico";
 import CommonHooks from "../../../hooks/common-hooks";
 import culture from "../../../data/culture.json";
-import InfoSection from "../../../components/culture/infoSection";
+import InfoSection from "../../../components/kakao/culture_infoSection";
 
 function Culture() {
   CommonHooks();

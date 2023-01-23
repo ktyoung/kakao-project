@@ -1,9 +1,8 @@
 import React from "react";
 import Footer from "../../../components/footer";
 import Header from "../../../components/header";
-import ListSubsidiary from "../../../components/subsidiary/listSubsidiary";
+import ListSubsidiary from "../../../components/kakao/subsidiary_listSubsidiary";
 import ArrIcon from "../../../components/svg/arr_ico";
-import OutlinkCircleIcon from "../../../components/svg/outlink_circle_ico";
 import CommonHooks from "../../../hooks/common-hooks";
 import subsidiary from "../../../data/subsidiary.json";
 

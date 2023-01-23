@@ -1,5 +1,5 @@
 import React from "react";
-import OutlinkCircleIcon from "../../components/svg/outlink_circle_ico";
+import OutlinkCircleIcon from "../svg/outlink_circle_ico";
 
 function ListSubsidiary(props: any) {
   return (

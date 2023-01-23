@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from "react";
 import Footer from "../../components/footer";
 import Header from "../../components/header";
-import HalfItemCard from "../../components/main/halfItemCard";
-import ItemCard from "../../components/main/itemCard";
+import HalfItemCard from "../../components/main/main_halfItemCard";
+import ItemCard from "../../components/main/main_itemCard";
 import ArrIcon from "../../components/svg/arr_ico";
 import data from "../../data/data.json";
 import CommonHooks from "../../hooks/common-hooks";
