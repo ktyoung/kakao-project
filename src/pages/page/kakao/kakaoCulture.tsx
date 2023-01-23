@@ -96,46 +96,6 @@ function Culture() {
                   txt_tag1={culture.txt_tag[8]}
                   txt_tag2={culture.txt_tag[9]}
                 />
-                {/* <div className="info_section">
-                  <div className="inner_section">
-                    <div className="wrap_img">
-                      <video
-                        src="/video/vod_culture1.mp4"
-                        autoPlay
-                        muted
-                        loop
-                        playsInline
-                        className="vod_culture"
-                      ></video>
-                    </div>
-                    <div className="wrap_cont">
-                      <strong className="tit_info" id="text1_2">
-                        가보지 않은 길을 <br /> 두려워 하지 않습니다.
-                      </strong>
-                      <span className="txt_info">Willing to Venture</span>
-                      <div className="info_cont">
-                        <p className="desc_info">
-                          "가보지 않은 길은 위험하잖아?"
-                          <br />
-                          배는 정박해 있을 때 가장 안전하지만 그것은 배의 존재
-                          이유가 아닙니다. 가보지 않은 길은 실패의 위험이
-                          따르지만 우리는 개선보다 혁신의 길을 가는
-                          사람들입니다. 문제 자체를 다시 정의하고 새로운 해답을
-                          찾는 것에 집중합니다. 도전이 두렵기만 하다면 카카오를
-                          떠날 때입니다.{" "}
-                        </p>
-                        <div className="wrap_tag">
-                          <span className="txt_tag">#개선아닌혁신</span>
-                          <span className="txt_tag">#도전은거침없이</span>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div> */}
-                {/* <div className="info_section"></div>
-                <div className="info_section"></div>
-                <div className="info_section"></div>
-                <div className="info_section"></div> */}
               </section>
               <span
                 className="link_top"

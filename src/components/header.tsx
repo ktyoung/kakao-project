@@ -41,7 +41,7 @@ function Header() {
                   <Link to="/kakaoCulture">카카오 문화</Link>
                 </li>
                 <li>
-                  <a href="#">공동체</a>
+                  <Link to="/subsidiaryCompany">공동체</Link>
                 </li>
                 <li>
                   <a href="#">히스토리</a>

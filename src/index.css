@@ -308,7 +308,7 @@ code {
   font-family: KakaoBig, Apple SD Gothic Neo, Malgun Gothic, 맑은 고딕,
     sans-serif;
   font-size: 18px;
-  font-weight: 700px;
+  font-weight: 700;
   line-height: 29px;
   letter-spacing: -0.28px;
   color: var(--baseForeground);
@@ -1345,4 +1345,81 @@ code {
   display: block;
   width: 100%;
   height: 100%;
+}
+
+/* 공동체 */
+.tit_main.tit_subsidiary {
+  background-image: url("../public/images/subsidiary/ico_tit_subsidiary.gif");
+}
+.section_subsidiary {
+  margin-top: 104px;
+}
+.list_subsidiary {
+  display: grid;
+  overflow: hidden;
+  grid-template-columns: repeat(2, 612px);
+  grid-gap: 0 72px;
+}
+.section_subsidiary .list_subsidiary li:nth-child(-n + 2) {
+  border-top: 1px solid var(--colorFg8);
+}
+.section_subsidiary .list_subsidiary li {
+  position: relative;
+  border-bottom: 1px solid var(--colorFg8);
+}
+.section_subsidiary .list_subsidiary .cont_item {
+  display: block;
+  min-height: 480px;
+  padding-bottom: 196px;
+  box-sizing: border-box;
+}
+.section_subsidiary .list_subsidiary .cont_item .tit_item,
+.section_subsidiary .list_subsidiary .cont_item .txt_item {
+  display: block;
+  font-family: KakaoBig, Apple SD Gothic Neo, Malgun Gothic, 맑은 고딕,
+    sans-serif;
+  font-size: 30px;
+  line-height: 40px;
+  color: var(--baseForeground);
+}
+.section_subsidiary .list_subsidiary .cont_item .tit_item {
+  padding-top: 36px;
+}
+.section_subsidiary .list_subsidiary .cont_item .txt_item {
+  margin-top: 12px;
+}
+.section_subsidiary .list_subsidiary .cont_item .desc_item {
+  margin-top: 24px;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 28px;
+  color: var(--colorFg6);
+  white-space: pre-line;
+}
+.section_subsidiary .list_subsidiary .cont_item .wrap_logo {
+  overflow: hidden;
+  position: absolute;
+  bottom: 96px;
+  left: 0;
+  right: 0;
+  height: 44px;
+}
+.section_subsidiary .list_subsidiary .cont_item .ico_outlink_circle,
+.section_subsidiary .list_subsidiary .cont_item .img_logo {
+  float: left;
+  height: 44px;
+}
+.section_subsidiary .list_subsidiary .cont_item .ico_outlink_circle {
+  float: right;
+  width: 44px;
+}
+.ico_outlink_circle circle {
+  fill: var(--colorBg1);
+}
+.ico_outlink_circle .stroke {
+  stroke: var(--baseForeground);
+}
+.ico_outlink_circle:active circle,
+.ico_outlink_circle:hover circle {
+  fill: var(--colorBg13);
 }
