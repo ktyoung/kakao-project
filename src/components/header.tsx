@@ -44,7 +44,7 @@ function Header() {
                   <Link to="/subsidiaryCompany">공동체</Link>
                 </li>
                 <li>
-                  <a href="#">히스토리</a>
+                  <Link to="/history">히스토리</Link>
                 </li>
               </ul>
             </li>
