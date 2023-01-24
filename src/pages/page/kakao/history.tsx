@@ -9,6 +9,7 @@ import historyList from "../../../data/history_list.json";
 
 function History() {
   let [clickCount, setClickCount] = useState(0);
+
   useEffect(() => {
     document
       .querySelectorAll(".btn_more")[0]
@@ -23,6 +24,7 @@ function History() {
         }
       });
   });
+
   CommonHooks();
   return (
     <>
@@ -51,33 +53,8 @@ function History() {
               <div className="feature_card">
                 <Carousel />
               </div>
-              {/* <div className="feature_card feature_mo"></div> */}
               <section className="section_history">
                 <h4 className="tit_section">연도별 히스토리</h4>
-                <div className="opt_comm">
-                  <div className="selected_item">
-                    <button className="btn_opt">
-                      <span className="screen_out">조회기간,</span>
-                      <span>
-                        모든 연도 <span className="screen_out">년도</span>
-                      </span>
-                      <span className="screen_out">, 변경</span>
-                    </button>
-                  </div>
-                  <strong className="screen_out">선택 항목 목록</strong>
-                  <ul className="list_opt">
-                    <li>
-                      <button type="button" className="btn_select">
-                        모든 연도
-                      </button>
-                    </li>
-                    <li>
-                      <button type="button" className="btn_select">
-                        2023 <span className="screen_out">년도</span>
-                      </button>
-                    </li>
-                  </ul>
-                </div>
                 <ul className="list_history">
                   <HistoryList
                     className={""}

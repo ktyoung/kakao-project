@@ -1458,66 +1458,6 @@ code {
   line-height: 40px;
   color: var(--baseForeground);
 }
-.section_history .opt_comm {
-  position: absolute;
-  top: 0;
-  right: 0;
-  z-index: 990;
-  width: 167px;
-}
-.opt_comm {
-  position: relative;
-  font-family: KakaoBig, Apple SD Gothic Neo, Malgun Gothic, 맑은 고딕,
-    sans-serif;
-  font-size: 16px;
-  color: var(--baseForeground);
-}
-.opt_comm .selected_item {
-  position: relative;
-  width: 100%;
-  height: 44px;
-  border-radius: 30px;
-  background: var(--colorBg1);
-  box-sizing: border-box;
-}
-.opt_comm .selected_item:after {
-  position: absolute;
-  top: 18px;
-  right: 20px;
-  border: 5px solid transparent;
-  border-top: 5px solid var(--baseForeground);
-  content: "";
-}
-.opt_comm .list_opt {
-  display: none;
-  overflow-y: auto;
-  position: absolute;
-  left: 0;
-  top: 56px;
-  width: 100%;
-  max-height: 202px;
-  padding: 10px 0;
-  border-radius: 12px;
-  background: var(--colorBg1);
-}
-
-.opt_comm .selected_item .btn_opt {
-  display: block;
-  overflow: hidden;
-  position: relative;
-  z-index: 10;
-  width: 100%;
-  height: 44px;
-  padding: 8px 20px 12px;
-  font-weight: 700;
-  font-size: 16px;
-  letter-spacing: -0.5px;
-  color: var(--baseForeground);
-  text-align: left;
-  white-space: nowrap;
-  text-overflow: ellipsis;
-}
-
 .section_history .list_history {
   margin-top: 48px;
 }
