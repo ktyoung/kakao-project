@@ -49,9 +49,9 @@ function Header() {
               </ul>
             </li>
             <li>
-              <a href="#" className="link_menu">
+              <Link to="/news" className="link_menu">
                 뉴스
-              </a>
+              </Link>
             </li>
             <li>
               <a className="link_menu" onClick={link_menu2}>

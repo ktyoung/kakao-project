@@ -913,6 +913,20 @@ code {
   line-height: 20px;
   letter-spacing: -0.2px;
 }
+.section_service .tit_service a:hover {
+  position: relative;
+}
+.section_service .tit_service a:hover:before {
+  position: absolute;
+  top: 7px;
+  left: -16px;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: #ffcd00;
+  vertical-align: top;
+  content: "";
+}
 .section_service .list_service li {
   margin-top: 12px;
 }
@@ -1671,6 +1685,7 @@ code {
   height: 80px;
   font-size: 30px;
   line-height: 40px;
+  white-space: pre-line;
 }
 .content-article .slick-slider .slick-slide .wrap_thumb {
   height: 306px;
@@ -1698,4 +1713,180 @@ code {
 }
 .slick-disabled .ico_pagenation:hover .stroke {
   stroke: #888;
+}
+
+/* 뉴스 */
+.tit_main.tit_news {
+  background-image: url("../public/images/news/ico_tit_news.gif");
+}
+.tit_sub {
+  font-family: KakaoBig, Apple SD Gothic Neo, Malgun Gothic, 맑은 고딕,
+    sans-serif;
+  font-size: 36px;
+  line-height: 52px;
+  color: var(--baseForeground);
+}
+
+.tit_sub + .wrap_tabs {
+  margin-top: 48px;
+}
+.list_tab {
+  position: relative;
+  margin-top: -10px;
+  z-index: 1;
+}
+.list_tab li {
+  display: inline-block;
+  margin: 10px 12px 0 0;
+}
+.list_tab li.on .link_tab {
+  background: var(--colorBg11);
+  font-weight: 700;
+  color: var(--baseBackground);
+}
+.list_tab li .link_tab {
+  display: block;
+  height: 44px;
+  padding: 0 20px;
+  border-radius: 30px;
+  background: var(--colorBg1);
+  font-family: KakaoBig, Apple SD Gothic Neo, Malgun Gothic, 맑은 고딕,
+    sans-serif;
+  font-size: 16px;
+  line-height: 43px;
+  letter-spacing: -0.5px;
+  color: var(--baseForeground);
+  cursor: pointer;
+}
+
+.wrap_tabs + .list_card {
+  padding-top: 12px;
+}
+.list_card {
+  margin: 0 -18px;
+  font-size: 0;
+  text-align: left;
+}
+.list_card > li {
+  display: inline-block;
+  margin-top: 36px;
+  padding: 0 18px;
+  vertical-align: top;
+  box-sizing: border-box;
+}
+.list_card.list_card_type2 .item_card {
+  width: 408px;
+}
+.list_card .item_card {
+  margin-top: 0;
+}
+.list_card.list_card_type2 .item_card .tit_card {
+  height: 80px;
+  font-size: 30px;
+  line-height: 40px;
+  white-space: pre-line;
+}
+.list_card.list_card_type2 .item_card .wrap_thumb {
+  height: 306px;
+  margin-top: 71px;
+}
+.item_card .wrap_thumb .thumb_img {
+  display: block;
+  width: 100%;
+  min-height: 100%;
+}
+.list_card.list_card_type2 .item_card .info_card {
+  top: 156px;
+  height: 20px;
+  font-size: 14px;
+  line-height: 20px;
+}
+.list_card .item_card .info_card {
+  margin-top: 24px;
+}
+.list_card + .paging_comm {
+  margin-top: 84px;
+}
+.paging_comm {
+  position: relative;
+  font-size: 0;
+  text-align: center;
+}
+.paging_comm .btn_page:disabled {
+  opacity: 0.5;
+  cursor: default;
+}
+.paging_comm .btn_page {
+  display: inline-block;
+  overflow: hidden;
+  width: 42px;
+  height: 42px;
+  margin: 0 36px;
+}
+.paging_comm .link_page.on {
+  font-weight: 700;
+  color: var(--baseForeground);
+}
+.paging_comm .link_page {
+  display: inline-block;
+  min-width: 44px;
+  margin-top: 9px;
+  font-family: KakaoBig, Apple SD Gothic Neo, Malgun Gothic, 맑은 고딕,
+    sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  color: var(--colorFg24);
+  vertical-align: top;
+  cursor: pointer;
+}
+.paging_comm .btn_prev .ico_pagenation {
+  -webkit-transform: rotate(180deg);
+  transform: rotate(180deg);
+}
+.paging_comm .btn_page:disabled .ico_pagenation:active circle,
+.paging_comm .btn_page:disabled .ico_pagenation:hover circle {
+  fill: var(--colorBg1);
+}
+.paging_comm .btn_page:disabled .ico_pagenation:active .stroke,
+.paging_comm .btn_page:disabled .ico_pagenation:hover .stroke {
+  stroke: #888;
+}
+.group_go {
+  position: absolute;
+  top: 0;
+  right: 0;
+  font-size: 0;
+}
+.group_go input {
+  display: inline-block;
+  width: 76px;
+  padding: 6px 16px 8px;
+  border: 2px solid var(--colorBg2);
+  border-radius: 21px;
+  color: var(--baseForeground);
+  font-size: 16px;
+  background: var(--colorFg21);
+  vertical-align: top;
+  text-align: center;
+  outline: none;
+  box-sizing: border-box;
+}
+.group_go input:focus {
+  border-color: var(--varBg16);
+}
+.group_go .txt_total {
+  display: inline-block;
+  margin: 8px 14px 0 8px;
+  color: var(--colorFg24);
+  font-size: 16px;
+  vertical-align: top;
+}
+.group_go .btn_go {
+  width: 42px;
+  height: 42px;
+  border-radius: 21px;
+  font-size: 16px;
+  color: var(--colorFg24);
+  background: var(--colorBg1);
+  line-height: 42px;
 }
