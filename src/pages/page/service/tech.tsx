@@ -1,14 +1,11 @@
 import React, { useEffect, useState } from "react";
 import Footer from "../../../components/footer";
 import Header from "../../../components/header";
-import NewsCarousel from "../../../components/news/news_carousel";
 import ArrIcon from "../../../components/svg/arr_ico";
 import CommonHooks from "../../../hooks/common-hooks";
-import PagenationIcon from "../../../components/svg/pagenation_ico";
-import TabContents from "../../../components/news/news_tabContents";
+import TechTabContents from "../../../components/tech/tech_tabContents";
 
-function News() {
-  let [page, setPage] = useState(1);
+function Tech() {
   let [tab, setTab] = useState(1);
 
   let list_tab = document.querySelectorAll(".list_tab li");
@@ -29,25 +26,22 @@ function News() {
             <div className="inner_path">
               <h3 className="screen_out">현재 페이지 위치</h3>
               <div className="wrap_tit">
-                <img src="/images/news/ico_news.webp" alt="아이콘 이미지" />
-                <strong className="tit_path">뉴스</strong>
+                <img src="/images/tech/ico_tech.webp" alt="아이콘 이미지" />
+                <strong className="tit_path">기술</strong>
               </div>
             </div>
           </section>
           <div className="main-content">
-            <article className="content-article">
-              <h3 role={"text"} className="tit_main tit_news">
-                <em className="emph_tit">뉴스</em>
+            <article className="content-article cont_tech">
+              <h3 role={"text"} className="tit_main tit_tech">
+                <em className="emph_tit">기술</em>
                 <span className="txt_tit">
-                  가장 빠른 카카오 새소식 업데이트
+                  당신의 오늘을 변화시키는 카카오 기술
                 </span>
               </h3>
-              <div className="feature_card">
-                <NewsCarousel />
-              </div>
-              <section className="section_social">
-                <h4 id="titNews" className="tit_sub">
-                  뉴스 아카이브
+              <section className="section_tech">
+                <h4 id="titTech" className="tit_sub screen_out">
+                  기술 아카이브
                 </h4>
                 <div className="wrap_tabs">
                   <ul role={"tablist"} className="list_tab">
@@ -78,7 +72,7 @@ function News() {
                       }}
                     >
                       <a id="tabNews2" className="link_tab">
-                        보도자료
+                        카카오테크
                       </a>
                     </li>
                     <li
@@ -93,7 +87,7 @@ function News() {
                       }}
                     >
                       <a id="tabNews3" className="link_tab">
-                        카카오 나우
+                        기술 플랫폼
                       </a>
                     </li>
                     <li
@@ -108,7 +102,7 @@ function News() {
                       }}
                     >
                       <a id="tabNews4" className="link_tab">
-                        미디어행사
+                        기술 서비스
                       </a>
                     </li>
                     <li
@@ -123,7 +117,7 @@ function News() {
                       }}
                     >
                       <a id="tabNews5" className="link_tab">
-                        지속가능경영
+                        기술 콘텐츠
                       </a>
                     </li>
                     <li
@@ -138,12 +132,27 @@ function News() {
                       }}
                     >
                       <a id="tabNews6" className="link_tab">
-                        서비스 복구 현황
+                        기술 이벤트
+                      </a>
+                    </li>
+                    <li
+                      role={"presentation"}
+                      className=""
+                      onClick={(e) => {
+                        e.preventDefault();
+                        e.stopPropagation();
+                        setTab(7);
+                        RemoveOn();
+                        list_tab[6].classList.add("on");
+                      }}
+                    >
+                      <a id="tabNews7" className="link_tab">
+                        if(kakao)
                       </a>
                     </li>
                   </ul>
                 </div>
-                <TabContents tab={tab} />
+                <TechTabContents tab={tab} />
               </section>
               <span
                 className="link_top"
@@ -162,4 +171,4 @@ function News() {
   );
 }
 
-export default News;
+export default Tech;

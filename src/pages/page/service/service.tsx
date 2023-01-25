@@ -1,14 +1,11 @@
 import React, { useEffect, useState } from "react";
 import Footer from "../../../components/footer";
 import Header from "../../../components/header";
-import NewsCarousel from "../../../components/news/news_carousel";
 import ArrIcon from "../../../components/svg/arr_ico";
 import CommonHooks from "../../../hooks/common-hooks";
-import PagenationIcon from "../../../components/svg/pagenation_ico";
-import TabContents from "../../../components/news/news_tabContents";
+import ServiceTabContents from "../../../components/service/service_tabContents";
 
-function News() {
-  let [page, setPage] = useState(1);
+function Service() {
   let [tab, setTab] = useState(1);
 
   let list_tab = document.querySelectorAll(".list_tab li");
@@ -29,25 +26,23 @@ function News() {
             <div className="inner_path">
               <h3 className="screen_out">현재 페이지 위치</h3>
               <div className="wrap_tit">
-                <img src="/images/news/ico_news.webp" alt="아이콘 이미지" />
-                <strong className="tit_path">뉴스</strong>
+                <img
+                  src="/images/service/ico_service.webp"
+                  alt="아이콘 이미지"
+                />
+                <strong className="tit_path">서비스</strong>
               </div>
             </div>
           </section>
           <div className="main-content">
-            <article className="content-article">
-              <h3 role={"text"} className="tit_main tit_news">
-                <em className="emph_tit">뉴스</em>
-                <span className="txt_tit">
-                  가장 빠른 카카오 새소식 업데이트
-                </span>
+            <article className="content-article cont_service">
+              <h3 role={"text"} className="tit_main tit_service">
+                <em className="emph_tit">서비스</em>
+                <span className="txt_tit">더 나은 세상을 만드는 카카오</span>
               </h3>
-              <div className="feature_card">
-                <NewsCarousel />
-              </div>
-              <section className="section_social">
-                <h4 id="titNews" className="tit_sub">
-                  뉴스 아카이브
+              <section className="section_tech">
+                <h4 id="titTech" className="tit_sub screen_out">
+                  기술 아카이브
                 </h4>
                 <div className="wrap_tabs">
                   <ul role={"tablist"} className="list_tab">
@@ -78,7 +73,7 @@ function News() {
                       }}
                     >
                       <a id="tabNews2" className="link_tab">
-                        보도자료
+                        카카오톡
                       </a>
                     </li>
                     <li
@@ -93,7 +88,7 @@ function News() {
                       }}
                     >
                       <a id="tabNews3" className="link_tab">
-                        카카오 나우
+                        커뮤니케이션
                       </a>
                     </li>
                     <li
@@ -108,7 +103,7 @@ function News() {
                       }}
                     >
                       <a id="tabNews4" className="link_tab">
-                        미디어행사
+                        라이프
                       </a>
                     </li>
                     <li
@@ -123,7 +118,7 @@ function News() {
                       }}
                     >
                       <a id="tabNews5" className="link_tab">
-                        지속가능경영
+                        커머스
                       </a>
                     </li>
                     <li
@@ -138,12 +133,57 @@ function News() {
                       }}
                     >
                       <a id="tabNews6" className="link_tab">
-                        서비스 복구 현황
+                        엔터테인먼트
+                      </a>
+                    </li>
+                    <li
+                      role={"presentation"}
+                      className=""
+                      onClick={(e) => {
+                        e.preventDefault();
+                        e.stopPropagation();
+                        setTab(7);
+                        RemoveOn();
+                        list_tab[6].classList.add("on");
+                      }}
+                    >
+                      <a id="tabNews7" className="link_tab">
+                        비즈니스
+                      </a>
+                    </li>
+                    <li
+                      role={"presentation"}
+                      className=""
+                      onClick={(e) => {
+                        e.preventDefault();
+                        e.stopPropagation();
+                        setTab(8);
+                        RemoveOn();
+                        list_tab[7].classList.add("on");
+                      }}
+                    >
+                      <a id="tabNews7" className="link_tab">
+                        AI/블록체인
+                      </a>
+                    </li>
+                    <li
+                      role={"presentation"}
+                      className=""
+                      onClick={(e) => {
+                        e.preventDefault();
+                        e.stopPropagation();
+                        setTab(9);
+                        RemoveOn();
+                        list_tab[8].classList.add("on");
+                      }}
+                    >
+                      <a id="tabNews7" className="link_tab">
+                        소셜임팩트
                       </a>
                     </li>
                   </ul>
                 </div>
-                <TabContents tab={tab} />
+                <ServiceTabContents tab={tab} />
               </section>
               <span
                 className="link_top"
@@ -162,4 +202,4 @@ function News() {
   );
 }
 
-export default News;
+export default Service;

@@ -59,10 +59,10 @@ function Header() {
               </a>
               <ul className="list_sub">
                 <li>
-                  <a href="#">기술</a>
+                  <Link to="/tech">기술</Link>
                 </li>
                 <li>
-                  <a href="#">서비스</a>
+                  <Link to="/service">서비스</Link>
                 </li>
               </ul>
             </li>

@@ -1,0 +1,36 @@
+{
+  "txt_cate": [
+    "카카오테크",
+    "기술 플랫폼",
+    "기술 서비스",
+    "기술 콘텐츠",
+    "기술 이벤트",
+    "if(kakao)"
+  ],
+  "tit_card_kakao_tech": ["사람과 기술이 함께, \n 카카오테크"],
+  "tit_card_tech_platform": [
+    "꿈꾸던 세상을 현실로, \n 카카오디벨로퍼스",
+    "변화를 만드는 AI, \n 카카오 i",
+    "하이브리드 블록체인 \n Klaytn"
+  ],
+  "tit_card_tech_service": [
+    "AI 같이 할래요? \n Tech Ground",
+    "오픈소스를 요리하다, \n Olive Platform ",
+    "더 크고, \n 더 빠르게 Buffalo",
+    "함께 성장하는 기술, \n Kakao open source",
+    "발견의 기쁨, 더 나은 경험. \n AI추천"
+  ],
+  "tit_card_tech_contents": [
+    "AI+일상=Tech&",
+    "인류의 난제에 도전하는, \n 카카오 브레인",
+    "이동을 통한 발견, \n 모빌리티 기술이야기"
+  ],
+  "tit_card_tech_event": ["카카오식 문제 해결 대회, \n kakao arena"],
+  "tit_card_ifkakao": [
+    "if(kakao)dev 2022",
+    "if(kakao)dev 2021",
+    "if(kakao)dev 2020",
+    "if(kakao)dev 2019",
+    "if(kakao)dev 2018"
+  ]
+}

@@ -1839,6 +1839,12 @@ code {
   vertical-align: top;
   cursor: pointer;
 }
+.paging_comm .link_page:hover {
+  text-decoration: underline;
+}
+.paging_comm .link_page.on:hover {
+  text-decoration: none;
+}
 .paging_comm .btn_prev .ico_pagenation {
   -webkit-transform: rotate(180deg);
   transform: rotate(180deg);
@@ -1889,4 +1895,17 @@ code {
   color: var(--colorFg24);
   background: var(--colorBg1);
   line-height: 42px;
+}
+
+/* 기술 */
+.tit_main.tit_tech {
+  background-image: url("../public/images/tech/ico_tit_tech.gif");
+}
+.section_tech {
+  padding-top: 44px;
+}
+
+/* 서비스 */
+.tit_main.tit_service {
+  background-image: url("../public/images/service/ico_tit_service.gif");
 }
