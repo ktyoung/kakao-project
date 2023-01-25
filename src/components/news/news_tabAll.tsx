@@ -1,0 +1,116 @@
+import NewsItemCard from "./news_itemCard";
+import news from "../../data/news.json";
+
+function TabAll() {
+  return (
+    <ul id="tabNewsContent1" className="list_card list_card_type2">
+      <NewsItemCard
+        txt_cate={news.txt_cate[0]}
+        txt_date={"2023.01.17"}
+        tit_card={news.tit_card_press[0]}
+        img_name={"news_report_thumb_1.webp"}
+        txt_keyword1={"#추모프로필"}
+        txt_keyword2={"#카카오톡"}
+        txt_keyword3={"#프로필"}
+      />
+      <NewsItemCard
+        txt_cate={news.txt_cate[4]}
+        tit_card={news.tit_card_service[0]}
+        img_name={"news_service_thumb_1.webp"}
+        txt_keyword1={"#1015협의체"}
+        txt_keyword2={"#이모티콘"}
+        txt_keyword3={"#카카오"}
+        txt_keyword4={"#쿠폰팩"}
+      />
+      <NewsItemCard
+        txt_cate={news.txt_cate[0]}
+        txt_date={"2023.01.12"}
+        tit_card={news.tit_card_press[1]}
+        img_name={"news_report_thumb_2.webp"}
+        txt_keyword1={"#카카오엔터테인먼트"}
+        txt_keyword2={"#글로벌투자유치"}
+      />
+      <NewsItemCard
+        txt_cate={news.txt_cate[0]}
+        txt_date={"2023.01.11"}
+        tit_card={news.tit_card_press[2]}
+        img_name={"news_report_thumb_3.webp"}
+        txt_keyword1={"#디지털접근성"}
+        txt_keyword2={"#신규업데이트"}
+        txt_keyword3={"#예약메시지"}
+      />
+      <NewsItemCard
+        txt_cate={news.txt_cate[0]}
+        txt_date={"2023.01.09"}
+        tit_card={news.tit_card_press[3]}
+        img_name={"news_report_thumb_4.webp"}
+        txt_keyword1={"#카카오톡 쇼핑하기"}
+        txt_keyword2={"#카카오쇼핑라이브"}
+        txt_keyword3={"#설날"}
+      />
+      <NewsItemCard
+        txt_cate={news.txt_cate[4]}
+        tit_card={news.tit_card_service[1]}
+        img_name={"news_service_thumb_2.webp"}
+        txt_keyword1={"#1015협의체"}
+        txt_keyword2={"#이모티콘"}
+        txt_keyword3={"#카카오"}
+        txt_keyword4={"#쿠폰팩"}
+      />
+      <NewsItemCard
+        txt_cate={news.txt_cate[1]}
+        tit_card={news.tit_card_now[0]}
+        img_name={"news_now_thumb_1.webp"}
+        txt_keyword1={"#메이커스"}
+        txt_keyword2={"#이모티콘"}
+        txt_keyword3={"#카카오"}
+        txt_keyword4={"#쿠폰팩"}
+        txt_keyword5={"#톡서랍"}
+      />
+      <NewsItemCard
+        txt_cate={news.txt_cate[0]}
+        txt_date={"2023.01.02"}
+        tit_card={news.tit_card_press[4]}
+        img_name={"news_report_thumb_5.webp"}
+        txt_keyword1={"#쇼핑하기"}
+        txt_keyword2={"#카카오톡 쇼핑하기"}
+        txt_keyword3={"#화훼농가"}
+      />
+      <NewsItemCard
+        txt_cate={news.txt_cate[0]}
+        txt_date={"2022.12.30"}
+        tit_card={news.tit_card_press[5]}
+        img_name={"news_report_thumb_6.webp"}
+        txt_keyword1={"#카카오메이커스"}
+        txt_keyword2={"#제가버치"}
+        txt_keyword3={"#배상면주가"}
+      />
+      <NewsItemCard
+        txt_cate={news.txt_cate[4]}
+        tit_card={news.tit_card_service[2]}
+        img_name={"news_service_thumb_3.webp"}
+        txt_keyword1={"#카카오"}
+      />
+      <NewsItemCard
+        txt_cate={news.txt_cate[0]}
+        txt_date={"2022.12.29"}
+        tit_card={news.tit_card_press[6]}
+        img_name={"news_report_thumb_7.webp"}
+        txt_keyword1={"#1015협의체"}
+        txt_keyword2={"#지원방안발표"}
+        txt_keyword3={"#카카오피해지원"}
+      />
+      <NewsItemCard
+        txt_cate={news.txt_cate[0]}
+        txt_date={"2022.12.28"}
+        tit_card={news.tit_card_press[7]}
+        img_name={"news_report_thumb_8.webp"}
+        txt_keyword1={"#우리동네단골시장"}
+        txt_keyword2={"#소신상인"}
+        txt_keyword3={"#ESG경영"}
+      />
+    </ul>
+  );
+}
+
+export default TabAll;

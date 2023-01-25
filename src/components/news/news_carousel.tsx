@@ -21,7 +21,7 @@ function NewsCarousel() {
       <Slider {...settings}>
         <CarouselCont
           tit_card={"끊김 없는 일상을 위하여 \n 전 국민에게 전하는 카카오 마음"}
-          img_name={"news_thumb_1.webp"}
+          img_name={"news_now_thumb_1.webp"}
           txt_keyword0={"#메이커스"}
           txt_keyword1={"#이모티콘"}
           txt_keyword2={"#카카오"}
