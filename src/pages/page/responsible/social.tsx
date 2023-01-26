@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
-import ESGTabContents from "../../../components/esg/esg_tabContents";
 import Footer from "../../../components/footer";
 import Header from "../../../components/header";
+import SocialTabContents from "../../../components/social/social_tabContents";
 import ArrIcon from "../../../components/svg/arr_ico";
 import CommonHooks from "../../../hooks/common-hooks";
 
@@ -105,7 +105,7 @@ function Social() {
                     </li>
                   </ul>
                 </div>
-                <ESGTabContents tab={tab} />
+                <SocialTabContents tab={tab} />
               </section>
               <span
                 className="link_top"
