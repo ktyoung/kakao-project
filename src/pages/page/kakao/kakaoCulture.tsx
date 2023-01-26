@@ -36,7 +36,10 @@ function Culture() {
               <section className="section_culture">
                 <div className="header_tit">
                   <video
-                    src="/video/vod_culture_top_210531.mp4"
+                    src={
+                      process.env.PUBLIC_URL +
+                      "/video/vod_culture_top_210531.mp4"
+                    }
                     autoPlay
                     muted
                     loop

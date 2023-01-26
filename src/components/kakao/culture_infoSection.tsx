@@ -6,7 +6,7 @@ function InfoSection(props: any) {
       <div className="inner_section">
         <div className="wrap_img">
           <video
-            src={"/video/" + props.video_title}
+            src={process.env.PUBLIC_URL + "/video/" + props.video_title}
             autoPlay
             muted
             loop
