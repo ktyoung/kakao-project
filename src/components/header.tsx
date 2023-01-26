@@ -78,10 +78,10 @@ function Header() {
                   <Link to="/social">소셜임팩트</Link>
                 </li>
                 <li>
-                  <a href="#">디지털 권리</a>
+                  <Link to="/digital">디지털 권리</Link>
                 </li>
                 <li>
-                  <a href="#">AI 윤리</a>
+                  <Link to="/ethics">AI 윤리</Link>
                 </li>
               </ul>
             </li>

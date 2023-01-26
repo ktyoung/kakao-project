@@ -1928,3 +1928,45 @@ code {
 .tit_sub + .wrap_tabs {
   margin-top: 48px;
 }
+
+/* 디지털 권리 */
+.tit_main.tit_digital {
+  background-image: url("../public/images/digital/ico_tit_digital.gif");
+}
+.list_card.list_card_type2 .item_card.card_full {
+  height: 530px;
+}
+.item_card.card_full {
+  position: relative;
+  height: 420px;
+  background: no-repeat 50% 50%;
+  background-size: cover;
+}
+.cont_resposible {
+  padding: 24px;
+  font-weight: 700;
+  color: #000;
+}
+.cont_resposible .tit_responsible {
+  display: block;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: -0.2px;
+  opacity: 0.5;
+}
+.cont_resposible .txt_responsible {
+  display: block;
+  margin-top: 14px;
+  font-size: 30px;
+  line-height: 1.33;
+  letter-spacing: -0.6px;
+  white-space: pre-line;
+}
+.section_responsible > .feature_card {
+  padding-bottom: 0;
+}
+
+/* AI 권리 */
+.tit_main.tit_ethics {
+  background-image: url("../public/images/ethics/ico_tit_ai.gif");
+}

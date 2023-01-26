@@ -1,0 +1,26 @@
+{
+  "bg_url": [
+    "url(/images/digital/digital_1.png)",
+    "url(/images/digital/digital_2.png)",
+    "url(/images/digital/digital_3.png)",
+    "url(/images/digital/digital_4.png)"
+  ],
+  "href": [
+    "https://clean.kakao.com/transparence/report",
+    "https://www.kakaocorp.com/page/responsible/detail/hateSpeech",
+    "https://www.kakaocorp.com/page/responsible/detail/digitalForKids",
+    "https://www.kakaocorp.com/page/responsible/detail/talkSafety"
+  ],
+  "tit_responsible": [
+    "카카오 이용자 보호 현황",
+    "증오발언 근절을 위한 카카오의 원칙",
+    "Digital for kids",
+    "모두를 위한 카톡 안녕가이드"
+  ],
+  "txt_responsible": [
+    "이용자의 권리 보호는 \n 카카오가 가장 중요하게 \n 생각하는 가치입니다.",
+    "누구나 안전하고 자유롭게 \n 소통할 수 있도록 \n 카카오는 증오발언에 \n 적극적으로 대응합니다.",
+    "아동청소년이 건강하게 \n 배우고 성장할 수 있는 \n 디지털 환경을 만듭니다.",
+    "모두 안녕할 수 있도록, \n 오늘도 더 안전한 \n 카카오톡을 만들어갑니다."
+  ]
+}

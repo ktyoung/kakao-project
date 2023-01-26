@@ -9,6 +9,8 @@ import Tech from "./pages/page/service/tech";
 import Service from "./pages/page/service/service";
 import ESG from "./pages/page/responsible/esg";
 import Social from "./pages/page/responsible/social";
+import Digital from "./pages/page/responsible/digital";
+import Ethics from "./pages/page/responsible/ethics";
 
 function App() {
   return (
@@ -23,6 +25,8 @@ function App() {
         <Route path="/service" element={<Service />} />
         <Route path="/esg" element={<ESG />} />
         <Route path="/social" element={<Social />} />
+        <Route path="/digital" element={<Digital />} />
+        <Route path="/ethics" element={<Ethics />} />
       </Routes>
     </>
   );
