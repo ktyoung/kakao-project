@@ -5,7 +5,7 @@ function NewsCarouselCont(props: any) {
         <span className="wrap_cont">
           <span role={"text"} className="info_cate">
             <img
-              src="/images/news/ico_news.webp"
+              src={process.env.PUBLIC_URL + "/images/news/ico_news.webp"}
               alt="아이콘"
               width={"36px"}
               height={"36px"}
@@ -17,7 +17,7 @@ function NewsCarouselCont(props: any) {
             <strong className="tit_card">{props.tit_card}</strong>
             <span className="wrap_thumb">
               <img
-                src={"/images/news/" + props.img_name}
+                src={process.env.PUBLIC_URL + "/images/news/" + props.img_name}
                 alt="썸네일 이미지"
                 className="thumb_img"
               />

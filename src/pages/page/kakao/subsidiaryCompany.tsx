@@ -19,7 +19,10 @@ function Subsidiary() {
               <h3 className="screen_out">현재 페이지 위치</h3>
               <div className="wrap_tit">
                 <img
-                  src="/images/subsidiary/ico_subsidiary.webp"
+                  src={
+                    process.env.PUBLIC_URL +
+                    "/images/subsidiary/ico_subsidiary.webp"
+                  }
                   alt="아이콘 이미지"
                 />
                 <strong className="tit_path">공동체</strong>

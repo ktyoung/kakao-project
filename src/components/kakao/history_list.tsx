@@ -7,7 +7,7 @@ function HistoryList(props: any) {
         <div role={"text"}>
           <span className="wrap_thumb">
             <img
-              src={"/images/history/" + props.img_name}
+              src={process.env.PUBLIC_URL + "/images/history/" + props.img_name}
               alt="히스토리 썸네일"
               className="thumb_img"
             />

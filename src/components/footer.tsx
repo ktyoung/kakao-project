@@ -1,4 +1,5 @@
 import React, { useEffect } from "react";
+import { Link } from "react-router-dom";
 import ArrowIcon from "./svg/arrow_ico";
 import OutlickIcon from "./svg/outlink_ico";
 import PlusIcon from "./svg/plus_ico";
@@ -51,80 +52,80 @@ function Footer() {
           <h2 className="screen_out">하단 메뉴</h2>
           <div className="warp_service">
             <strong className="tit_service">
-              <a href="#">
+              <Link to="/kakaoCulture">
                 <span role={"text"}>카카오</span>
-              </a>
+              </Link>
             </strong>
             <ul role={"list"} className="list_service">
               <li role={"listitem"}>
-                <a href="#">
+                <Link to="/kakaoCulture">
                   <span role={"text"}>카카오 문화</span>
-                </a>
+                </Link>
               </li>
               <li role={"listitem"}>
-                <a href="#">
+                <Link to="/subsidiaryCompany">
                   <span role={"text"}>공동체</span>
-                </a>
+                </Link>
               </li>
               <li role={"listitem"}>
-                <a href="#">
+                <Link to="/history">
                   <span role={"text"}>히스토리</span>
-                </a>
+                </Link>
               </li>
             </ul>
           </div>
           <div className="warp_service wrap_news">
             <strong className="tit_service">
-              <a href="#">
+              <Link to="/news">
                 <span role={"text"}>뉴스</span>
-              </a>
+              </Link>
             </strong>
           </div>
           <div className="warp_service">
             <strong className="tit_service">
-              <a href="#">
+              <Link to="/tech">
                 <span role={"text"}>기술과 서비스</span>
-              </a>
+              </Link>
             </strong>
             <ul role={"list"} className="list_service">
               <li role={"listitem"}>
-                <a href="#">
+                <Link to="/tech">
                   <span role={"text"}>기술</span>
-                </a>
+                </Link>
               </li>
               <li role={"listitem"}>
-                <a href="#">
+                <Link to="/service">
                   <span role={"text"}>서비스</span>
-                </a>
+                </Link>
               </li>
             </ul>
           </div>
           <div className="warp_service">
             <strong className="tit_service">
-              <a href="#">
+              <Link to="/esg">
                 <span role={"text"}>약속과 책임</span>
-              </a>
+              </Link>
             </strong>
             <ul role={"list"} className="list_service">
               <li role={"listitem"}>
-                <a href="#">
+                <Link to="/esg">
                   <span role={"text"}>ESG</span>
-                </a>
+                </Link>
               </li>
               <li role={"listitem"}>
-                <a href="#">
+                <Link to="/social">
                   <span role={"text"}>소셜임팩트</span>
-                </a>
+                </Link>
               </li>
               <li role={"listitem"}>
-                <a href="#">
+                <Link to="/digital">
                   <span role={"text"}>디지털 권리</span>
-                </a>
+                </Link>
               </li>
               <li role={"listitem"}>
-                <a href="#">
+                <Link to="/ethics">
                   <span role={"text"}>AI 윤리</span>
-                </a>
+                </Link>
               </li>
             </ul>
           </div>
@@ -574,7 +575,7 @@ function Footer() {
             </strong>
           </div>
           <small className="txt_copyright">
-            &copy; <a href="#">Kakao Corp.</a>&nbsp;All rights reserved.
+            &copy; <Link to="/">Kakao Corp.</Link>&nbsp;All rights reserved.
           </small>
         </section>
       </div>

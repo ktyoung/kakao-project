@@ -13,7 +13,7 @@ function ListSubsidiary(props: any) {
         {props.tit_item === "카카오" && (
           <div className="wrap_logo">
             <img
-              src={"/images/subsidiary/kakao.png"}
+              src={process.env.PUBLIC_URL + "/images/subsidiary/kakao.png"}
               alt="로고"
               className="img_logo"
             />
@@ -23,7 +23,11 @@ function ListSubsidiary(props: any) {
           <a href={props.outlink_url} target="_blank" className="wrap_logo">
             <span role={"text"}>
               <img
-                src={"/images/subsidiary/" + props.logo_name}
+                src={
+                  process.env.PUBLIC_URL +
+                  "/images/subsidiary/" +
+                  props.logo_name
+                }
                 alt="로고"
                 className="img_logo"
               />
@@ -35,7 +39,7 @@ function ListSubsidiary(props: any) {
         {props.tit_item === "카카오스페이스" && (
           <div className="wrap_logo">
             <img
-              src={"/images/subsidiary/kakaospace.png"}
+              src={process.env.PUBLIC_URL + "/images/subsidiary/kakaospace.png"}
               alt="로고"
               className="img_logo"
             />

@@ -26,7 +26,10 @@ function Tech() {
             <div className="inner_path">
               <h3 className="screen_out">현재 페이지 위치</h3>
               <div className="wrap_tit">
-                <img src="/images/tech/ico_tech.webp" alt="아이콘 이미지" />
+                <img
+                  src={process.env.PUBLIC_URL + "/images/tech/ico_tech.webp"}
+                  alt="아이콘 이미지"
+                />
                 <strong className="tit_path">기술</strong>
               </div>
             </div>

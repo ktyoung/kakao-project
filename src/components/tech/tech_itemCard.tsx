@@ -5,7 +5,7 @@ function TechItemCard(props: any) {
         <span className="wrap_cont">
           <span role={"text"} className="info_cate">
             <img
-              src="/images/tech/ico_tech.webp"
+              src={process.env.PUBLIC_URL + "/images/tech/ico_tech.webp"}
               alt="아이콘"
               width={"36px"}
               height={"36px"}
@@ -23,7 +23,7 @@ function TechItemCard(props: any) {
             <strong className="tit_card">{props.tit_card}</strong>
             <span className="wrap_thumb">
               <img
-                src={"/images/tech/" + props.img_name}
+                src={process.env.PUBLIC_URL + "/images/tech/" + props.img_name}
                 alt="카드 썸네일"
                 className="thumb_img"
               />

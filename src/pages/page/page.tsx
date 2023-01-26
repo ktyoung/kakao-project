@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 import Footer from "../../components/footer";
 import Header from "../../components/header";
 import HalfItemCard from "../../components/main/main_halfItemCard";
@@ -43,7 +44,12 @@ function Page() {
               <h3 className="screen_out">현재 페이지 위치</h3>
               <div className="wrap_tit">
                 <img
-                  src={"/images/date/date-png/" + day + ".png"}
+                  src={
+                    process.env.PUBLIC_URL +
+                    "/images/date/date-png/" +
+                    day +
+                    ".png"
+                  }
                   alt="아이콘 이미지"
                 />
                 <strong className="tit_path">오늘의 카카오</strong>
@@ -174,12 +180,15 @@ function Page() {
                   <strong className="tit_culture tit_pc">
                     기술과 사람으로 더 나은 세상을 만듭니다.
                   </strong>
-                  <a href="#" className="link_culture">
+                  <Link to="/kakaoCulture" className="link_culture">
                     카카오문화 바로가기
                     <ArrIcon className={"ico_arr"} />
-                  </a>
+                  </Link>
                   <img
-                    src="/images/bg_home_culture_210325.png"
+                    src={
+                      process.env.PUBLIC_URL +
+                      "/images/bg_home_culture_210325.png"
+                    }
                     alt="카카오 문화 이미지"
                     className="thumb_culture thumb_culture_l"
                   />
@@ -317,7 +326,7 @@ function Page() {
                 </div>
                 <div className="wrap_etc">
                   <div className="item_etc">
-                    <a href="" className="link_etc link_service">
+                    <Link to="/service" className="link_etc link_service">
                       <strong className="tit_item">
                         사람과 기술로 일상을 돕는 카카오 서비스
                       </strong>
@@ -325,7 +334,7 @@ function Page() {
                         서비스 바로가기
                         <ArrIcon className={"ico_arr"} />
                       </span>
-                    </a>
+                    </Link>
                   </div>
                   <div className="item_etc">
                     <a

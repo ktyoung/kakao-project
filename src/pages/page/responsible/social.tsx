@@ -26,7 +26,12 @@ function Social() {
             <div className="inner_path">
               <h3 className="screen_out">현재 페이지 위치</h3>
               <div className="wrap_tit">
-                <img src="/images/social/ico_social.webp" alt="아이콘 이미지" />
+                <img
+                  src={
+                    process.env.PUBLIC_URL + "/images/social/ico_social.webp"
+                  }
+                  alt="아이콘 이미지"
+                />
                 <strong className="tit_path">소셜임팩트</strong>
               </div>
             </div>

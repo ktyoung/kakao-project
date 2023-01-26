@@ -5,7 +5,7 @@ function ESGItemCard(props: any) {
         <span className="wrap_cont">
           <span role={"text"} className="info_cate">
             <img
-              src="/images/esg/ico_esg.webp"
+              src={process.env.PUBLIC_URL + "/images/esg/ico_esg.webp"}
               alt="아이콘"
               width={"36px"}
               height={"36px"}
@@ -17,7 +17,7 @@ function ESGItemCard(props: any) {
             <strong className="tit_card">{props.tit_card}</strong>
             <span className="wrap_thumb">
               <img
-                src={"/images/esg/" + props.img_name}
+                src={process.env.PUBLIC_URL + "/images/esg/" + props.img_name}
                 alt="카드 썸네일"
                 className="thumb_img"
               />

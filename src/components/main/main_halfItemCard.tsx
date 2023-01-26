@@ -39,7 +39,7 @@ function Stock(props: any) {
       <div role={"text"}>
         <span className="info_cate">
           <img
-            src={"/images/" + props.iconName}
+            src={process.env.PUBLIC_URL + "/images/" + props.iconName}
             alt="아이콘"
             width={"36px"}
             height={"36px"}
@@ -70,7 +70,7 @@ function Half(props: any) {
       <div role={"text"}>
         <span className="info_cate">
           <img
-            src={"/images/" + props.iconName}
+            src={process.env.PUBLIC_URL + "/images/" + props.iconName}
             alt="약속과 책임 아이콘"
             width={"36px"}
             height={"36px"}
@@ -95,7 +95,7 @@ function Customer(props: any) {
       <div role={"text"}>
         <span className="info_cate">
           <img
-            src="/images/ico_customer.png"
+            src={process.env.PUBLIC_URL + "/images/ico_customer.png"}
             alt=""
             width={"36"}
             height={"36"}

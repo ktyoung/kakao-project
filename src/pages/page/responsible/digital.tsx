@@ -18,7 +18,9 @@ function Digital() {
               <h3 className="screen_out">현재 페이지 위치</h3>
               <div className="wrap_tit">
                 <img
-                  src="/images/digital/ico_digital.webp"
+                  src={
+                    process.env.PUBLIC_URL + "/images/digital/ico_digital.webp"
+                  }
                   alt="아이콘 이미지"
                 />
                 <strong className="tit_path">디지털 권리</strong>

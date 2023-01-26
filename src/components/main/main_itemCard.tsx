@@ -6,7 +6,7 @@ function ItemCard(props: any) {
       <span className="wrap_cont">
         <span role={"text"} className="info_cate">
           <img
-            src={"/images/" + props.iconName}
+            src={process.env.PUBLIC_URL + "/images/" + props.iconName}
             alt="아이콘"
             width={"36"}
             height={"36"}
@@ -24,7 +24,9 @@ function ItemCard(props: any) {
           <strong className="tit_card">{props.title}</strong>
           <div className="wrap_thumb">
             <img
-              src={"/images/" + props.thumb_src + ".webp"}
+              src={
+                process.env.PUBLIC_URL + "/images/" + props.thumb_src + ".webp"
+              }
               alt="썸네일 이미지"
               className="thumb_img"
             />

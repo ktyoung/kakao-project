@@ -5,7 +5,7 @@ function ServiceItemCard(props: any) {
         <span className="wrap_cont">
           <span role={"text"} className="info_cate">
             <img
-              src="/images/service/ico_service.webp"
+              src={process.env.PUBLIC_URL + "/images/service/ico_service.webp"}
               alt="아이콘"
               width={"36px"}
               height={"36px"}
@@ -17,7 +17,9 @@ function ServiceItemCard(props: any) {
             <strong className="tit_card">{props.tit_card}</strong>
             <span className="wrap_thumb">
               <img
-                src={"/images/service/" + props.img_name}
+                src={
+                  process.env.PUBLIC_URL + "/images/service/" + props.img_name
+                }
                 alt="카드 썸네일"
                 className="thumb_img"
               />

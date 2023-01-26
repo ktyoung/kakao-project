@@ -7,7 +7,7 @@ function CarouselCont(props: any) {
         <span className="wrap_cont">
           <span role={"text"} className="info_cate">
             <img
-              src="/images/history/ico_history.webp"
+              src={process.env.PUBLIC_URL + "/images/history/ico_history.webp"}
               alt="아이콘"
               width={"36px"}
               height={"36px"}
@@ -19,7 +19,9 @@ function CarouselCont(props: any) {
             <strong className="tit_card">{props.tit_card}</strong>
             <span className="wrap_thumb">
               <img
-                src={"/images/history/" + props.img_name}
+                src={
+                  process.env.PUBLIC_URL + "/images/history/" + props.img_name
+                }
                 alt="썸네일 이미지"
                 className="thumb_img"
               />
