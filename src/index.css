@@ -1909,3 +1909,22 @@ code {
 .tit_main.tit_service {
   background-image: url("../public/images/service/ico_tit_service.gif");
 }
+
+/* ESG */
+.tit_main.tit_esg {
+  background-image: url("../public/images/esg/ico_tit_esg.gif");
+}
+.cont_esg .section_esg {
+  margin-top: 92px;
+}
+
+/* 소셜임팩트 */
+.section_social {
+  padding-top: 44px;
+}
+.tit_main.tit_social {
+  background-image: url("../public/images/social/ico_tit_social.gif");
+}
+.tit_sub + .wrap_tabs {
+  margin-top: 48px;
+}

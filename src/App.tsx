@@ -7,6 +7,8 @@ import History from "./pages/page/kakao/history";
 import News from "./pages/page/news/news";
 import Tech from "./pages/page/service/tech";
 import Service from "./pages/page/service/service";
+import ESG from "./pages/page/responsible/esg";
+import Social from "./pages/page/responsible/social";
 
 function App() {
   return (
@@ -19,6 +21,8 @@ function App() {
         <Route path="/news" element={<News />} />
         <Route path="/tech" element={<Tech />} />
         <Route path="/service" element={<Service />} />
+        <Route path="/esg" element={<ESG />} />
+        <Route path="/social" element={<Social />} />
       </Routes>
     </>
   );

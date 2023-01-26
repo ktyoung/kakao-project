@@ -72,10 +72,10 @@ function Header() {
               </a>
               <ul className="list_sub">
                 <li>
-                  <a href="#">ESG</a>
+                  <Link to="/esg">ESG</Link>
                 </li>
                 <li>
-                  <a href="#">소셜임팩트</a>
+                  <Link to="/social">소셜임팩트</Link>
                 </li>
                 <li>
                   <a href="#">디지털 권리</a>
